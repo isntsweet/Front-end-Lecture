@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- HTML5 의미 -->
+<html lang="ko"><!-- 웹페이지 사용언어 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function a(){
+            alert("경고창을 띄웁니다");
+        }
+    </script>
+    <style>
+        body{
+            margin-left:50px; margin: top 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="hello.css">
 </head>
-<body>
-    <h1>Hello World</h1>
+<body onload="a()">
+    <h1 style="color: blue; background-color:gray">Hello World</h1>
+    <hr>
+    <p>하나의 문단입니다.</p>
+    <H3 title="header">H3 태크입니다.</H3>
+    <img src="../img/cats.jpg" alt="고양이">
+    <!--주석입니다.-->
 </body>
 </html>
