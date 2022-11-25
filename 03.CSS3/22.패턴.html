@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 패턴</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            width: 960px; margin: 0 auto; overflow: hidden;
+        }
+        #menu{
+            width: 260px; float: left;
+        }
+        #section{
+            width: 700px; float: right;
+        }
+        li { color: red;}
+        @media screen and (max-width:767px) {
+            body { width: auto;}
+            #menu { width: auto; float: none;}
+            #section { width: auto; float: none;}
+            li {color: greenyellow; list-style: none;}
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, labore.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem, iusto sit ullam laudantium dolores veniam quis sapiente accusamus molestiae ipsam ipsa necessitatibus, facere tempore dolore voluptates blanditiis nostrum et quia exercitationem eos voluptatem in ex tenetur. Nesciunt sit qui vero inventore impedit maxime corporis, beatae totam dignissimos! Non, quam. Sit nam saepe voluptatum voluptatem assumenda, iusto dolorum ex expedita at ad rerum consequatur earum ullam sint voluptatibus adipisci. Rem, dolorem repellat fuga illo impedit vero. Nemo, a odit quis quam natus tempore, unde atque repudiandae dolore error hic officia optio corrupti facere! Itaque dicta ea, aliquid vel facere ipsum.</p>
+    </div>
+</body>
+</html>
