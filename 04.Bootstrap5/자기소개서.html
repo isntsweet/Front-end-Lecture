@@ -13,6 +13,7 @@
     <style>
         *{
             font-family: 'Noto Sans KR', sans-serif;
+           
         }
     </style>
 </head>
@@ -21,10 +22,126 @@
         <h1>My Introduce Page</h1>
         <p>자기소개서</p> 
     </div>
-    
+    <!-- 사진 10개 이상, 컴포넌트 요소 5개, 내가 가보고 싶은 곳 등, html&img zip파일로 -->
     <div class="container mt-5">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#move1">취미</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#move2">좋아하는 음식</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#move3">좋아하는 여행지</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#move4">간단한 자기소개</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#move5">살고싶은 도시</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#move6">좋아하는 노래</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#move7">바이오</a>
+            </li>
+          </ul>
         <div class="row">
-            <div class="col-4">
+                <div class="col-2">
+                    
+                </div>
+                <div class="col-110 mx-auto d-block">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/1000/400?q=1" class="d-block" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>Introducing myself.</h3>
+                                    <p>english</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1000/400?q=2" class="d-block" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>나 자신을 소개합니다.</h3>
+                                    <p>한글</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/1000/400?q=3" class="d-block" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>自分を紹介します。</h3>
+                                    <p>日本語</p>
+                                </div>  
+                            </div>
+                        </div>
+                        
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <img src="../../temp/tatting lace.jpg" alt="tatting lace" class="img-thumbnail mx-auto d-block" id="move1" style="width:800px;">
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    자세히 보기
+                </button>
+                <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+          
+                <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Tatting Lace</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+          
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>
+                    태팅 레이스를 취미로 즐기고 있습니다.
+                    태팅 레이스의 태팅은 독일어 tatting, 이 단어는 이탈리아어에서 유래했는데,
+                    이 뜻은 '작은 보트의 작업'이며, 작은 보트처럼 생긴 도구로 작업을 해서 붙은 이름입니다.
+                </p>
+            </div>
+          
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3" id="move2">
                 <h2>1. 좋아하는 여행지<i class="fa-solid fa-plane-departure"></i></h2>
                 <div class="card" style="width: 304px;">
                     <img src="../../temp/okinawa.jpg" class="card-img-top" alt="okinawa" style="width:100%">
@@ -34,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">        
+            <div class="col-3" id="move3">        
                 <h2>2. 좋아하는 음식<i class="fa-solid fa-pizza-slice"></i></h2>
                 <div class="card" style="width:304px">
                     <div class="card-body">
@@ -45,7 +162,7 @@
                     <img src="../../temp/pizza.jpg" class="card-img-bottom" alt="pizza" width="100%">
                 </div>
             </div>
-            <div class="col-4">  
+            <div class="col-3" id="move4">  
                 <h2>3. 간단한 자기소개<i class="fa-solid fa-computer"></i></h2>
                 <div class="card" style="width: 304px;">
                     <img src="../../temp/SoftwareDeveloper.png" class="card-img-top" alt="okinawa" style="width:100%">
@@ -55,18 +172,65 @@
                     </div>
                 </div>
             </div>
+            <div class="col-2"></div>
         </div>
     </div>
     <div class="container mt-4">
-        <h2>수업진도율</h2>
-        <div class="progress">
-          <div class="progress-bar" style="width:26.3%">26.3%</div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id="move5">
+                <h2>한번쯤 살아보고 싶은 곳</h2>
+                <img src="../../temp/아일랜드.jpg" class="rounded" alt="아일랜드">
+                <button type="button" class="btn btn-success" data-bs-toggle="tooltip" title="평소 즐겨하던 게임의 배경이 되는 나라라 한번쯤 살아보고 싶습니다.">아일랜드</button>
+                <h2 id ="move6">좋아하는 노래</h2>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../temp/exid.jfif" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../temp/exid2.png" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../temp/exid3.jfif" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                            </div>  
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <p>EXID의 <낮보다는 밤에>라는 곡을 좋아합니다. 잔잔하면서도 리듬감 있는 곡조가 좋습니다.</p>
+                <br>
+                <h2 id="move7">바이오</h2>
+                <pre>
+                    생년월일:1988.12.26
+                    사는 곳: 대구광역시
+                    이메일: bibliophile.ko@gmail.com
+                </pre>
+            </div>
+            <div class="col-2"></div>
         </div>
-      </div>
+        <br>
+        
     <br>
-    <div class="container-fluid p-3 bg-secondary text-white text-center">
-        <h1>My Introduce Page</h1>
-        <p>자기소개서</p> 
-    </div>
 </body>
 </html>
