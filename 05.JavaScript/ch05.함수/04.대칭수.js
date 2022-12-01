@@ -1,0 +1,27 @@
+/*  세자리 숫자 두개를 곱해서 만든 수 중에서
+    대칭수(palindrome) 이면서 가장 큰 값은?
+    그 때의 곱한 수 두개는? */
+function isPalindrome(Str){
+    let reverseStr = '';
+    for(let i = Str.length -1; i >= 0; i--)
+        reverseStr += Str[i];
+    return Str == reverseStr;
+}
+
+// console.log(isPalindrome('우영우'));
+
+let maxPal = 0, maxI = 0, maxK = 0;
+for(let i = 100; i <= 999; i++){
+    for(let k = i;k <= 999; k++){
+        let product = i * k;
+        if (isPalindrome(String(product))){
+            if(product > maxPal){
+                maxPal = product;
+                maxI = i;
+                maxK = k;
+            }
+        }
+    }
+
+}
+console.log(`${maxI}*${maxK} = ${maxPal}`);
