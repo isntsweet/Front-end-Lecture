@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성순서 해결</title>
+    <script>
+        function handler(){
+            document.querySelector('h1').style.backgroundColor='orange';
+            document.querySelector('h2').style.color='green';
+        }
+        /* 해결방법 2. */
+        // window.onload = handler;    // 이벤트 핸들러 등록, ()가 없음
+    </script>
+</head>
+<!-- 해결방법3. 베스트-->
+<body onload = "handler()">          <!--이벤트가 발생하면 핸들러 호출, ()가 있음-->
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <!-- 해결방법 1. 하지 말것 -->
+<!--     <script>
+        document.querySelector('h1').style.backgroundColor='yellow';
+        document.querySelector('h2').style.color='red';
+    </script> -->
+</body>
+</html>
